@@ -2,7 +2,7 @@
 /**
  * sub_t- this is the sub
  * @stk: stack stk
- * @cnt: this is the line num
+ * @cnt: this is th line num
  * Return: nothing
  */
 void sub_t(stack_t **stk, unsigned int cnt)
