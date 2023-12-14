@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
-* ops - this runs the code
+* ops - this runs the codes
 * @stk: head linked list - stack
 * @cnt: this si the line count
 * @paper: this points to the code
