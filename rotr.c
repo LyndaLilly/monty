@@ -1,6 +1,6 @@
 #include "monty.h"
 /**
- * rotr_t- this rotates the stack
+ * rotr_t- this rotates the tack
  * @stk: stack stk
  * @cnt: this is the line cnt
  * Return: nothing
