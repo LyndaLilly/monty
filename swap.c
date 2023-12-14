@@ -1,6 +1,6 @@
 #include "monty.h"
 /**
- * swap_t - this swaps the top
+ * swap_t - this swaps the tops
  * @stk: stack stk
  * @cnt: this is cnt num
  * Return: nothing
