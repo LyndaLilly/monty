@@ -1,4 +1,4 @@
-#include "proj.h"
+#include "monty.h"
 /**
  * p_str - this prints the string
  * @stk: stack stk

@@ -1,4 +1,4 @@
-#include "proj.h"
+#include "monty.h"
 /**
  * mul_t - this multiplies stack
  * @stk: stack stk

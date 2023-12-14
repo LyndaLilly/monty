@@ -1,4 +1,4 @@
-#include "proj.h"
+#include "monty.h"
 /**
  * div_to - this divides the stack
  * @stk: this stk stack

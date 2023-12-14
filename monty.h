@@ -1,5 +1,5 @@
-#ifndef _PROJ_H_
-#define _PROJ_H_
+#ifndef _MONTY_H_
+#define _MONTY_H_
 
 #define  _GNU_SOURCE
 
@@ -22,9 +22,9 @@
 
 typedef struct stack_s
 {
-	int n;
-	struct stack_s *prev;
-	struct stack_s *next;
+        int n;
+        struct stack_s *prev;
+        struct stack_s *next;
 } stack_t;
 
 /**
@@ -38,10 +38,10 @@ typedef struct stack_s
 
 typedef struct allow
 {
-	char *drag;
-	FILE *paper;
-	char *input;
-	int que;
+        char *drag;
+        FILE *paper;
+        char *input;
+        int que;
 }  bus_t;
 extern bus_t bus;
 
@@ -55,8 +55,8 @@ extern bus_t bus;
 
 typedef struct instruction_s
 {
-	char *opcode;
-	void (*f)(stack_t **stack, unsigned int line_number);
+        char *opcode;
+        void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
 char *resize(char *ptr, unsigned int due, unsigned int pext);

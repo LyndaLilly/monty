@@ -1,4 +1,4 @@
-#include "proj.h"
+#include "monty.h"
 /**
  * mod_t - this combines the modules
  * @stk: stack stk

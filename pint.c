@@ -1,4 +1,4 @@
-#include "proj.h"
+#include "monty.h"
 /**
  * print_int - this prints the integer
  * @stk: this is the stack head

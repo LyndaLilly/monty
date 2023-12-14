@@ -1,9 +1,9 @@
-#include "proj.h"
+#include "monty.h"
 /**
-  *sub_t- this is the sub
-  *@stk: stack stk
-  *@cnt: this is the line num
-  *Return: nothing
+ * sub_t- this is the sub
+ * @stk: stack stk
+ * @cnt: this is the line num
+ * Return: nothing
  */
 void sub_t(stack_t **stk, unsigned int cnt)
 {
