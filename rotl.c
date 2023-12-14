@@ -2,7 +2,7 @@
 /**
  * rotl_t - this turns the stack around
  * @stk: stack stk
- * @cnt: this is the line cnt
+ * @cnt: this is the line cnts
  * Return: nothing
  */
 void rotl_t(stack_t **stk,  __attribute__((unused)) unsigned int cnt)
