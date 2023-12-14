@@ -2,7 +2,7 @@
 /**
  * queue_t - the ques the stack
  * @stk: this is stk
- * @cnt: this is the line cnt
+ * @cnt: this is is the line cnt
  * Return: nothing
 */
 void queue_t(stack_t **stk, unsigned int cnt)
