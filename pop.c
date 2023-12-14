@@ -3,7 +3,7 @@
  * pop_t - this brings out all pop
  * @stk: this is the head stk
  * @cnt: this is the num
- * Return: nothing
+ * Return: nothings
 */
 void pop_t(stack_t **stk, unsigned int cnt)
 {
