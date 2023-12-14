@@ -53,42 +53,18 @@ int ops(char *input, stack_t **stk, unsigned int cnt, FILE *paper)
 }
 
 /**
- * node_t - this shows the node
- * @stk: this si the stack
- * @n: it goes to next line
- * Return: none
-*/
-void node_t(stack_t **stk, int n)
-{
-
-	stack_t *new_node, *aux;
-
-	aux = *stk;
-	new_node = malloc(sizeof(stack_t));
-	if (new_node == NULL)
-	{ printf("Error\n");
-		exit(0); }
-	if (aux)
-		aux->prev = new_node;
-	new_node->n = n;
-	new_node->next = *stk;
-	new_node->prev = NULL;
-	*stk = new_node;
-}
-
-/**
 * free_mem - this frees thelink
 * @stk: this is the head stack
 */
 void free_mem(stack_t *stk)
 {
-	stack_t *aux;
+	stack_t *a;
 
-	aux = stk;
+	a = stk;
 	while (stk)
 	{
-		aux = stk->next;
+		a = stk->next;
 		free(stk);
-		stk = aux;
+		stk = a;
 	}
 }

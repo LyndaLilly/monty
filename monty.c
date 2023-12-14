@@ -39,7 +39,7 @@ int main(int argc, char *argv[])
 		{
 			ops(input, &stack, cnt, paper);
 		}
-		free(paper);
+		free(input);
 	}
 	free_mem(stack);
 	fclose(paper);
