@@ -4,7 +4,7 @@
  * @stk: stack stk
  * @cnt: this is the line cnt
  * Return: nothing
-*/
+ */
 void mod_t(stack_t **stk, unsigned int cnt)
 {
 	stack_t *p;
