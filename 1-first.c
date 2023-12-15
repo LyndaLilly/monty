@@ -3,10 +3,10 @@
 /**
  * push_t - this push in code
  * @stk: this is the head stack
- * @num: this is the number
+ * @cnt: this is the number
  * Return: nothing
 */
-void push_t(stack_t **stk, unsigned int num)
+void push_t(stack_t **stk, unsigned int cnt)
 {
 	int a, x = 0, y = 0;
 
@@ -19,13 +19,13 @@ void push_t(stack_t **stk, unsigned int num)
 			if (bus.drag[x] > 57 || bus.drag[x] < 48)
 				y = 1; }
 		if (y == 1)
-		{ fprintf(stderr, "L%d: usage: push integer\n", num);
+		{ fprintf(stderr, "L%d: usage: push integer\n", cnt);
 			fclose(bus.paper);
 			free(bus.input);
 			free_mem(*stk);
 			exit(EXIT_FAILURE); }}
 	else
-	{ fprintf(stderr, "L%d: usage: push integer\n", num);
+	{ fprintf(stderr, "L%d: usage: push integer\n", cnt);
 		fclose(bus.paper);
 		free(bus.input);
 		free_mem(*stk);
