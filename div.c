@@ -4,7 +4,7 @@
  * @stk: this stk stack
  * @cnt: this line num
  * Return: nothing
-*/
+ */
 void div_to(stack_t **stk, unsigned int cnt)
 {
 	stack_t *p;
