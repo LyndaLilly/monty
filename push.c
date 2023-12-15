@@ -2,13 +2,13 @@
 
 /**
 * ops - this runs the codes
-* @stk: head linked list - stack
+* @stack: head linked list - stack
 * @cnt: this si the line count
 * @paper: this points to the code
 * @input: this is the linpe input
-* Return: void
+* Return: nothing
 */
-int ops(char *input, stack_t **stk, unsigned int cnt, FILE *paper)
+int ops(char *input, stack_t **stack, unsigned int cnt, FILE *paper)
 {
 	instruction_t opst[] = {
 				{"push", push_t}, {"pall", print_all}, {"pint", print_int},
@@ -28,26 +28,26 @@ int ops(char *input, stack_t **stk, unsigned int cnt, FILE *paper)
 				{"stack", st_p},
 				{NULL, NULL}
 				};
-	unsigned int i = 0;
-	char *op;
+	unsigned int c = 0;
+	char *d;
 
-	op = strtok(input, " \n\t");
-	if (op && op[0] == '#')
+	d = strtok(input, " \n\t");
+	if (d && d[0] == '#')
 		return (0);
 	bus.drag = strtok(NULL, " \n\t");
-	while (opst[i].opcode && op)
+	while (opst[c].opcode && d)
 	{
-		if (strcmp(op, opst[i].opcode) == 0)
-		{	opst[i].f(stk, cnt);
+		if (strcmp(d, opst[c].opcode) == 0)
+		{	opst[c].f(stack, cnt);
 			return (0);
 		}
-		i++;
+		c++;
 	}
-	if (op && opst[i].opcode == NULL)
-	{ fprintf(stderr, "L%d: unknown instruction %s\n", cnt, op);
+	if (d && opst[c].opcode == NULL)
+	{ fprintf(stderr, "L%d: unknown instruction %s\n", cnt, d);
 		fclose(paper);
 		free(input);
-		free_mem(*stk);
+		free_mem(*stack);
 		exit(EXIT_FAILURE); }
 	return (1);
 }
