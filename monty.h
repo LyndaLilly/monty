@@ -61,9 +61,9 @@ typedef struct instruction_s
 char *resize(char *ptr, unsigned int due, unsigned int pext);
 ssize_t readin(char **line, int paper);
 char *sanitize(char *input);
-void push_t(stack_t **stk, unsigned int num);
-void print_all(stack_t **stk, unsigned int num);
-void print_int(stack_t **stk, unsigned int num);
+void push_t(stack_t **stk, unsigned int cnt);
+void print_all(stack_t **stk, unsigned int cnt);
+void print_int(stack_t **stk, unsigned int cnt);
 int ops(char *input, stack_t **stk, unsigned int cnt, FILE *paper);
 void free_mem(stack_t *stk);
 void pop_t(stack_t **stk, unsigned int cnt);
