@@ -8,7 +8,7 @@
 */
 void push_t(stack_t **stk, unsigned int num)
 {
-	int a, x = 0, flag = 0;
+	int a, x = 0, y = 0;
 
 	if (bus.drag)
 	{
@@ -17,8 +17,8 @@ void push_t(stack_t **stk, unsigned int num)
 		for (; bus.drag[x] != '\0'; x++)
 		{
 			if (bus.drag[x] > 57 || bus.drag[x] < 48)
-				flag = 1; }
-		if (flag == 1)
+				y = 1; }
+		if (y == 1)
 		{ fprintf(stderr, "L%d: usage: push integer\n", num);
 			fclose(bus.paper);
 			free(bus.input);
