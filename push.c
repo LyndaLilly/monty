@@ -51,8 +51,31 @@ int ops(char *input, stack_t **stk, unsigned int cnt, FILE *paper)
 		exit(EXIT_FAILURE); }
 	return (1);
 }
-
 /**
+ * node_t - this adds node to the tray
+ * @stk: thisis the head stk
+ * @n: the node to add
+ * Return: nothing
+*/
+void node_t(stack_t **stk, int n)
+{
+        stack_t *m, *a;
+
+        a = *stk;
+        m = malloc(sizeof(stack_t));
+
+        if (m == NULL)
+        {
+                printf("Error\n");
+                exit(0);
+        }
+        if (a)
+                a->prev = m;
+        m->n = n;
+        m->next = *stk;
+        m->prev = NULL;
+        *stk = m;
+}
 * free_mem - this frees thelink
 * @stk: this is the head stack
 */
